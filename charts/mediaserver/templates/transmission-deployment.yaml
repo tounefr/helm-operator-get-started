@@ -38,16 +38,16 @@ spec:
         resources: {}
         volumeMounts:
         - mountPath: /config
-          name: transmission-claim0
+          name: transmission-configmap
         - mountPath: /downloads
           name: downloads
         - mountPath: /watch
           name: transmission-claim2
       restartPolicy: Always
       volumes:
-      - name: transmission-claim0
-        persistentVolumeClaim:
-          claimName: transmission-claim0
+      - name: transmission-configmap
+        configMap:
+          name: transmission-config
       - name: downloads
         persistentVolumeClaim:
           claimName: downloads
