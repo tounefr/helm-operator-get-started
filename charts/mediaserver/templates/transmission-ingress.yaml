@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: transmission
+  name: transmission
+spec:
+  rules:
+  - host: transmission
+    http:
+      paths:
+      - backend:
+          serviceName: transmission
+          servicePort: 9091
+status:
+  loadBalancer: {}
