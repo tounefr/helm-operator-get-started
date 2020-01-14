@@ -10,6 +10,7 @@ metadata:
   labels:
     io.kompose.service: transmission
   name: transmission
+  namespace: {{ $.Release.Namespace }}
 spec:
   replicas: 1
   strategy:
