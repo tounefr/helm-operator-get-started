@@ -8,6 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
 spec:
   releaseName: mediaserver-dev
+  targetNamespace: dev
   chart:
     git: git@github.com:tounefr/helm-operator-get-started
     path: charts/mediaserver
