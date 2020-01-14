@@ -15,7 +15,7 @@ spec:
     type: Recreate
   template:
     metadata:
-      creationTimestamp: null
+      creationTimestamp:
       labels:
         io.kompose.service: plex
     spec:
@@ -29,6 +29,8 @@ spec:
           value: "022"
         - name: VERSION
           value: docker
+        - name: PLEX_CLAIM
+          value: plex-788f7f69bb-8vk59
         image: linuxserver/plex:latest
         name: plex
         ports:
@@ -39,12 +41,14 @@ spec:
           name: downloads
         - mountPath: /movies
           name: downloads
+        - mountPath: /config
+          name: plex-config
       restartPolicy: Always
       volumes:
       - name: downloads
         persistentVolumeClaim:
           claimName: downloads
-      - name: downloads
+      - name: plex-config
         persistentVolumeClaim:
-          claimName: downloads
+          claimName: plex-config
 status: {}

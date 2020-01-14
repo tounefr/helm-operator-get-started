@@ -3,15 +3,15 @@ kind: Ingress
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: transmission
-  name: transmission
+    io.kompose.service: plex
+  name: plex
 spec:
   rules:
-  - host: transmission
+  - host: plex
     http:
       paths:
       - backend:
-          serviceName: transmission
-          servicePort: 9091
+          serviceName: plex
+          servicePort: 32400
 status:
   loadBalancer: {}
