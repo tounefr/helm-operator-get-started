@@ -30,7 +30,7 @@ spec:
         - name: VERSION
           value: docker
         - name: PLEX_CLAIM
-          value: claim-N5w7_siBbyKP_rLWhU2y
+          value: claim-Cgay51pVXmhb9yX4TeCz
         image: linuxserver/plex:latest
         name: plex
         ports:
