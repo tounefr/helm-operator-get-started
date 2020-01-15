@@ -1,7 +1,0 @@
-name: mediaserver
-description: A generated Helm Chart for mediaserver from Skippbox Kompose
-version: 0.0.2
-keywords:
-  - mediaserver
-sources:
-home:
