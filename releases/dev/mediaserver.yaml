@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: mediaserver-dev
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: mediaserver-dev
+  chart:
+    git: git@github.com:tounefr/helm-operator-get-started
+    path: charts/mediaserver
+    ref: master
