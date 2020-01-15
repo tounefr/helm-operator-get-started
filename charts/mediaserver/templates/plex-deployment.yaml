@@ -40,7 +40,7 @@ spec:
         - mountPath: /movies
           name: downloads
         - mountPath: /config
-          name: config
+          name: plex-config
       restartPolicy: Always
       volumes:
       - name: downloads
