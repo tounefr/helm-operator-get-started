@@ -39,12 +39,14 @@ spec:
           name: downloads
         - mountPath: /movies
           name: downloads
+        - mountPath: /config
+          name: config
       restartPolicy: Always
       volumes:
       - name: downloads
         persistentVolumeClaim:
           claimName: downloads
-      - name: downloads
+      - name: plex-config
         persistentVolumeClaim:
-          claimName: downloads
+          claimName: plex-config
 status: {}
