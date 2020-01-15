@@ -52,9 +52,6 @@ spec:
       - name: downloads
         persistentVolumeClaim:
           claimName: downloads
-      - name: downloads
-        persistentVolumeClaim:
-          claimName: downloads
       - name: transmission-claim3
         persistentVolumeClaim:
           claimName: transmission-claim3
