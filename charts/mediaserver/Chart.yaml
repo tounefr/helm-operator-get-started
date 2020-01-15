@@ -2,7 +2,7 @@ apiVersion: v1
 appVersion: "3.1.5"
 description: mediaserver Helm chart for Kubernetes
 name: mediaserver
-version: 1.0.2
+version: 1.0.3
 sources:
 - https://github.com/tounefr/helm-operator-get-started/charts/mediaserver
 maintainers:
