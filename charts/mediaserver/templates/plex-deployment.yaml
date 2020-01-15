@@ -29,6 +29,8 @@ spec:
           value: "022"
         - name: VERSION
           value: docker
+        - name: PLEX_CLAIM
+          value: claim-xChWFLjZjBk6Mmq9mLm-
         image: linuxserver/plex:latest
         name: plex
         ports:
