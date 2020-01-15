@@ -47,8 +47,8 @@ spec:
       restartPolicy: Always
       volumes:
       - name: transmission-claim0
-        persistentVolumeClaim:
-          claimName: transmission-claim0
+        configMap:
+          name: transmission-configmap
       - name: downloads
         persistentVolumeClaim:
           claimName: downloads
